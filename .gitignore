@@ -25,7 +25,7 @@
 /cluster_AP-Copy1.py
 /cluster_AP.py
 /cluster_AP.py:Zone.Identifier
-/data
+/data/*
 /hpregr_AP.py
 /hregr_hyperparameter.py
 /hyperparameters.py
@@ -54,3 +54,5 @@
 /todo.txt
 /try.ipynb
 /visualize.ipynb
+*.pyc
+alpha_hp_stepwise.py
