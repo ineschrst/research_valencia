@@ -99,9 +99,26 @@ callback = EarlyStopping(monitor='val_loss', patience=5, restore_best_weights=Tr
 
 ## Running the Code 
 
+All execution scripts are located in the `code/` directory and should be run from the project root.
+
+#### 1. Configuration & Core Functions
+All core logic, including data preprocessing, segmentation, and ML model definitions (CNN, LSTM, GRU, etc.), is contained in:
+* `code/ap_utils.py`
+
+#### 2. Training and Single-Step Prediction
+To train a model and evaluate it on a single-step horizon:
+`alpha_hp.py`: Adjust parameters like lookback or batch_size within the script. Results are logged to `results/alpha_results.txt`.
+
+#### 3. Stepwise (Recursive) Prediction
+To train a model and evaluate it on a stepwise horizon by feeding its own predictions back into itself. 
+`alpha_stepwise.py`: Adjust parameters like stepsize or batch_size within the script. Results are logged to `results/stepwise_results.txt`.
 
 --- 
 
 ## Results & Figures 
+* `results/`: Contains exemplary logging files showing model performance.
 
+* `figures/`: Contains exemplary figures including raw pulses, PCA clusters, and prediction overlays.
+
+*  Detailed Analysis: For more information on the research results, refer to the included `presentation_Ines_Commlab.pdf`.
 
