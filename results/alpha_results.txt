@@ -1,0 +1,6 @@
+------------------------------------------
+Evaluating REG | lback=32, hp=8, steps=1, epochs=1000
+Fitting time: 0.1804 minutes
+Test Accuracy: 90.54%
+Centroid error: 0.091 | Model: REG
+Pulse vs centroid error: 0.753 | Model: REG

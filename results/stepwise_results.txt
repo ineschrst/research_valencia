@@ -1,0 +1,10 @@
+------------------------------------------
+lback = 64, hp = 8, stepsize = 2, epochs = 1000, batch_size = 32, mode = 0
+REG
+Fitting time: 0.0612 minutes
+Accuracy of the Test Dataset: 91.68%
+Accuracy of the Test Dataset, for the whole horizon: 90.16%
+Step-wise Accuracies: 91.67%, 90.61%, 89.51%, 88.83%
+the difference between the true and predicted centroids 0.274 for model REG
+the difference between the true pulses and predicted centroids 1.225 for model REG
+The Loss Sum 343.058
